@@ -15,4 +15,12 @@ public class Voiture {
     public float getPrix(){
         return this.prix;
     }
+
+    public void setMarque(String marque) {
+        this.marque = marque;
+    }
+
+    public void setPrix(float prix) {
+        this.prix = prix;
+    }
 }
