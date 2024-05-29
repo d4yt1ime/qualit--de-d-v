@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Service implements Statistique{
-    List<Voiture> voitures = new ArrayList<>();
+    private ArrayList<Voiture> voitures;
+    public Service(){
+        ArrayList<Voiture> voitures = new ArrayList<Voiture>();
+    }
 
     @Override
     public void ajouter(Voiture voiture) {
