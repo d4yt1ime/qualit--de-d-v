@@ -6,7 +6,7 @@ import java.util.List;
 public class Service implements Statistique{
 
     private ArrayList<Voiture> voitures;
-    public Service() {ArrayList<Voiture> voitures = new ArrayList<>();}
+    public Service() {this.voitures = new ArrayList<Voiture>();}
 
     @Override
     public void ajouter(Voiture voiture) {
@@ -25,5 +25,9 @@ public class Service implements Statistique{
             remise = 20000;
         }
         return prixTotal-remise;
+    }
+
+    public ArrayList getVoiture(){
+        return this.voitures;
     }
 }
