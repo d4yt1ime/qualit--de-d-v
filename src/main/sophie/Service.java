@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Service implements Statistique{
+
     private ArrayList<Voiture> voitures;
-    public Service(){
-        ArrayList<Voiture> voitures = new ArrayList<Voiture>();
-    }
+    public Service() {ArrayList<Voiture> voitures = new ArrayList<>();}
 
     @Override
     public void ajouter(Voiture voiture) {
@@ -16,23 +15,15 @@ public class Service implements Statistique{
 
     @Override
     public int prix() throws ArithmeticException {
-        if (voitures.isEmpty()) {
-            throw new ArithmeticException("Il n'y a pas de voiture.");
+        int prixTotal = 0;
+        for (int i=0; i < this.voitures.size(); i++){
+            prixTotal += this.voitures.get(i).getPrix();
         }
-
-        int nbDeVoitures = voitures.size();
-        float prix = voitures.get(0).getPrix();
-
-        double remise = 0;
-        int maxRemise = 20000;
-        double prixTotal = nbDeVoitures * prix;
-
-        // Calcul de la remise
-        remise = Math.min(maxRemise, prixTotal * 0.05 * (nbDeVoitures / 5));
-
-        // Application de la remise
-        prixTotal -= remise;
-
-        return (int) prixTotal;
+        int percentage = this.voitures.size()/5;
+        int remise = prixTotal*(percentage*5)/100;
+        if (remise > 20000){
+            remise = 20000;
+        }
+        return prixTotal-remise;
     }
 }
