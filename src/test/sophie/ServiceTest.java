@@ -16,8 +16,8 @@ public class ServiceTest {
         Voiture v3 = new Voiture("T-Roc", 20);
 
         s.ajouter(v1);
-        s.ajouter(v1);
-        s.ajouter(v1);
+        s.ajouter(v2);
+        s.ajouter(v3);
 
 
     }
