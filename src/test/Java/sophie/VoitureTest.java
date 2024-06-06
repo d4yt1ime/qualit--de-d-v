@@ -15,7 +15,7 @@ public class VoitureTest {
     public void testMarque() {
         Voiture v = new Voiture("T-Roc", 40000);
         v.setMarque("Audi");
-        assertEquals("Audi", v.getMarque());
+        assertEquals("Mercedes", v.getMarque());
     }
     @Test
     public void testPrix() {
