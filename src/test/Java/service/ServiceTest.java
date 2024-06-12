@@ -1,6 +1,8 @@
-package sophie;
+package service;
 
+import data.Voiture;
 import org.junit.jupiter.api.Test;
+import service.Service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

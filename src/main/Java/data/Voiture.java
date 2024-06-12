@@ -1,4 +1,4 @@
-package sophie;
+package data;
 
 public class Voiture {
     private String marque;
