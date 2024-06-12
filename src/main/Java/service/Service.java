@@ -1,9 +1,10 @@
-package sophie;
+package service;
+
+import data.Voiture;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Service implements Statistique{
+public class Service implements Statistique {
 
     private ArrayList<Voiture> voitures;
     public Service() {this.voitures = new ArrayList<Voiture>();}
