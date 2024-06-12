@@ -29,6 +29,7 @@ public class Service implements Statistique {
     }
 
     public ArrayList getVoiture(){
+
         return this.voitures;
     }
 }
