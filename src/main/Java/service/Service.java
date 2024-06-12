@@ -16,6 +16,10 @@ public class Service implements Statistique {
 
     @Override
     public int prix() throws ArithmeticException {
+        if (voitures.isEmpty()) {
+            throw new ArithmeticException("Il n'y a pas de voiture.");
+        }
+
         int prixTotal = 0;
         for (int i=0; i < this.voitures.size(); i++){
             prixTotal += this.voitures.get(i).getPrix();
