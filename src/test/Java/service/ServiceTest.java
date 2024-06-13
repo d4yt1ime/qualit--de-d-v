@@ -25,7 +25,7 @@ public class ServiceTest {
         Voiture v3 = new Voiture("T-Roc", 30000);
         Voiture v4 = new Voiture("T-Roc", 10000);
         Voiture v5 = new Voiture("T-Roc", 5000);
-        Voiture v6 = new Voiture("T-Roc", 100000);
+        Voiture v6 = new Voiture("T-Roc", 1000000);
         s.ajouter(v1);
         s.ajouter(v2);
         assertEquals(80000,s.prix());
@@ -34,6 +34,6 @@ public class ServiceTest {
         s.ajouter(v5);
         assertEquals(118750,s.prix());
         s.ajouter(v6);
-        assertEquals(213750,s.prix());
+        assertEquals(1105000,s.prix());
     }
 }
