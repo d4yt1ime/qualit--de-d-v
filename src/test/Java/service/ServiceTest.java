@@ -25,7 +25,7 @@ public class ServiceTest {
         Voiture v3 = new Voiture("T-Roc", 30000);
         Voiture v4 = new Voiture("T-Roc", 10000);
         Voiture v5 = new Voiture("T-Roc", 5000);
-        Voiture v6 = new Voiture("T-Roc", 1000000);
+        Voiture v6 = new Voiture("Audi", 1000000);
         s.ajouter(v1);
         s.ajouter(v2);
         assertEquals(80000,s.prix());
