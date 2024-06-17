@@ -1,14 +1,13 @@
-/*package com.topaze.demo;
+package com.topaze.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PaulineApplication {
+public class SophieApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PaulineApplication.class, args);
+		SpringApplication.run(SophieApplication.class, args);
 	}
 
 }
-*/
