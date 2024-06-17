@@ -3,6 +3,7 @@ package data;
 public class Voiture {
     private String marque;
     private float prix;
+    int i = 0;
 
     public Voiture(String m, float p){
         this.marque=m;
