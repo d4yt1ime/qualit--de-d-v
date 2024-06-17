@@ -9,5 +9,3 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 @IncludeClassNamePatterns(".*Test")
 class SuiteVoiture {
 }
-
-
