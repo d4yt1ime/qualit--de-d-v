@@ -13,10 +13,6 @@ java {
 	}
 }
 
-springBoot {
-	mainClass = ' com.topaze.demo.VenteVoitureApplication'
-}
-
 repositories {
 	mavenCentral()
 }
